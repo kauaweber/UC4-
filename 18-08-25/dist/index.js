@@ -1,0 +1,24 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Dog_1 = require("./Dog");
+const Owl_1 = require("./Owl");
+const Crocodile_1 = require("./Crocodile");
+const myDog = new Dog_1.Dog("Rex", 12);
+console.log(myDog.name);
+console.log(myDog.weight);
+myDog.bark();
+myDog.eat();
+const myOwl = new Owl_1.Owl("Pablo", 3);
+console.log(myOwl.name);
+console.log(myOwl.weight);
+myOwl.fly();
+myOwl.eat();
+const myCrocodile = new Crocodile_1.Crocodile("Croc", 200);
+console.log(myCrocodile.name);
+console.log(myCrocodile.weight);
+myCrocodile.swim();
+myCrocodile.eat();
+let animals = [myDog, myOwl, myCrocodile];
+animals.forEach((animal) => {
+    animal.eat();
+});
