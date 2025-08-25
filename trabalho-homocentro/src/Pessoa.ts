@@ -8,17 +8,20 @@ export class Pessoa {
         this.idade = idade;
         this.peso = peso;
     }
-    mostrarInfo(): string {
-        return ` Nome: ${this.nome}, Idade: ${this.idade}, Peso: ${this.peso}`;
+
+    public mostrarInfo(): string {
+        return `${this.nome} | ${this.idade} | ${this.peso}`;
     }
-    getNome(): string {
+
+    public getNome(): string {
         return this.nome;
     }
-    getIdade(): number {
+
+    public getIdade(): number {
         return this.idade;
     }
-    getPeso(): number {
+
+    public getPeso(): number {
         return this.peso;
     }
 }
-
